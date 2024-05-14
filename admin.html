@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline e-commerce</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="javascripts/data.js"></script>
+  <script src="javascripts/admin.js"></script>
+
+  
+</head>
+
+<body>
+  <nav class="n-bar">
+    <span class="brand">Sunnah Purfumes</span>
+    <ul class="nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="admin.html" id="admin">Admin</a></li>
+      
+      <li><a href="login.html" id="login">Login</a></li>
+      <li><a href="register.html" id="register">Register</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="class-1-1">
+
+      <div>
+        <h3 style="text-align: center;color:darkslategrey;">Product</h3>
+        <form id="frm-product">
+          <div class="class-1">
+            <input placeholder="name..." id="name" class="input" required />
+          </div>
+          <div class="class-1">
+            <input type="number" placeholder="price..." id="price" class="input" required />
+          </div>
+          <div class="class-1">
+            <input placeholder="quantity..." id="description" class="input" required />
+          </div>
+          <div class="class-1">
+            <input type="file" placeholder="description..." id="picture" class="input" required />
+          </div>
+          <div class="class-1" style="text-align: right">
+            <button type="reset" class="button-set1" type="button" id="reset-btn">
+              Reset
+            </button>
+            <button class="button-set1" type="button" id="save-btn">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+      <div>
+        <h3 style="text-align: center;color:darkslategrey;">Products</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Net Quantity</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

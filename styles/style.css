@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Segoe UI', Sans-Serif;
+    background-color: antiquewhite;
+    
+}
+.container
+{
+    display: block;
+    width: 97.5%;
+    margin: 0 auto;
+  
+}
+.n-bar 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: .75rem .25rem;
+    background-color: #333;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+.brand
+{
+    font-weight: 700;
+    padding-left: .5rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .25rem .25rem;
+}
+.nav a
+{
+    display: inline-block;
+    width: 110px;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    
+    border-radius: .25rem;
+    color: #FFFFFF;
+   font-weight: 700;
+    
+}
+.nav li
+{
+    margin-right: .25rem;
+}
+.nav a:hover
+{
+    background-color: #ddd;
+    color: black;
+    transition: all 0.4s ease;
+}
+.nav li button
+{
+    padding: .5rem .5rem;
+    background-color: #E91E63;
+    border-top-right-radius:.25rem;
+    border-bottom-right-radius:.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width:0;
+    color: #FFFFFF;
+}
+
+.content img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 24px;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 1px #ccc;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.box img {
+    width: 250px;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+}
+
+.box div {
+    width: 100%;
+    padding: 4px;
+}
+
+.name {
+    text-align: center;
+    font-weight: 500;
+}
+
+.price {
+    text-align: right;
+    font-weight: 700;
+}
+
+.desc {
+    text-align: center;
+}
+
+.add {
+    text-align: right;
+}
+
+.box button {
+    padding: .25rem .5rem;
+}
+
+.list {
+
+    list-style: none;
+    padding: 0;
+
+
+
+}
+
+.list-head {
+    padding: 5px 10px;
+    background-color: #F8BBD0;
+    margin-bottom: 1px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+}
+
+.list li {
+    padding: 5px 10px;
+    background-color: #F8BBD0;
+    margin-bottom: 1px;
+
+}
+
+.mlist {
+    list-style: none;
+    padding: 0;
+
+}
+
+.mlist li {
+    padding: 5px 10px;
+    background-color: #F8BBD0;
+    margin-bottom: 1px;
+
+}
+
+/* grid */
+.class-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+.class-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+.c-lr {
+    display: grid;
+    grid-template-columns: 60%;
+    padding: .5rem;
+    column-gap: .5rem;
+    margin-left: 30%;
+}
+
+.mt {
+    margin-top: 5px;
+}
+
+
+/* form */
+.field {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+}
+
+.input-log {
+    width: 90px;
+    padding: .5rem .25rem;
+    border: solid 1px #BDBDBD;
+    border-radius: .25rem;
+    margin-right: .25rem;
+}
+
+.input-log1 {
+    width: 90px;
+    padding: .5rem .25rem;
+    border: solid 1px #BDBDBD;
+    border-right-width: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    margin-right: 0;
+}
+
+.input {
+    width: 100%;
+    padding: .5rem .25rem;
+    border: solid 1px #BDBDBD;
+    border-radius: .25rem;
+}
+
+.input-start {
+    width: 100%;
+    padding: .5rem .25rem;
+    border: solid 1px #BDBDBD;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+
+
+.btn {
+    padding: .75rem 1.75rem;
+    border: solid 1px #de72ef;
+    background-color:green;
+    color: #ecf0f1;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
+.button-set1 {
+    padding: .5rem 1.75rem;
+    border: solid 1px grey;
+    background-color:rgba(253, 76, 0, 0.5);
+    color:indigo;
+    font-weight: 800;
+    
+}
+.btn-cart
+{
+    cursor: pointer;
+    padding: .5rem 1.75rem;
+    border: solid 1px #c90c0c;
+    background-color:springgreen;
+      color:#333;
+}
+
+.button-save {
+    background-color: #fff000;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: center;
+    transition: 200ms;
+    width: 20%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-save:not(:disabled):hover,
+  .button-save:not(:disabled):focus {
+    outline: 0;
+    background: #f4e603;
+    box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+  
+  .button-save:disabled {
+    filter: saturate(0.2) opacity(0.5);
+    -webkit-filter: saturate(0.2) opacity(0.5);
+    cursor: not-allowed;
+  }
+
+.button-del {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
+  
+  .button-del:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+  .button-del:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+  }
+  
+
+  .button-checkout  {
+    appearance: button;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-checkout :focus {
+    text-decoration: none;
+  }
+  
+  .button-checkout :hover {
+    text-decoration: none;
+  }
+  
+  .button-checkout :active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-checkout :not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
+  @media (min-width: 768px) {
+    .button-50 {
+      padding: 12px 50px;
+    }
+  }
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}
+
+.circle-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border:#f44336 solid 1px;
+}
+
+.table th,
+td {
+    border:teal solid 1px;
+    padding: 8px;
+}
+
+.table th {
+    border-bottom:teal 3px;
+}

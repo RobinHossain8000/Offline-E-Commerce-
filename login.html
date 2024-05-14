@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline e-commerce</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="javascripts/data.js"></script>
+  <script src="javascripts/login.js"></script>
+</head>
+
+<body>
+  <nav class="n-bar">
+    <span class="brand">Sunnah Purfumes</span>
+    <ul class="nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="admin.html" id="admin">Admin</a></li>
+      
+      <li><a href="login.html" id="login">Login</a></li>
+      
+    </ul>
+  </nav>
+  <main class="container">
+    <div class="c-lr">
+      <div style="border-right: dotted 1px #ccc;">
+        <h3 style="text-align: center;">Login</h3>
+        <form id="frm-login">
+          <div class="class-1">
+            <input placeholder="username..." id="lusername" class="input" required />
+          </div>
+          <div class="class-1">
+            <input type="password" placeholder="password..." id="lpassword" class="input" required />
+          </div>
+          <div class="class-1" style="text-align: right;">
+            <button class="button-set1" type="button" id="login-btn">Login</button>
+          </div>
+          <div style="text-align: center;color: #ccc;margin-top: 10px;">
+            <span style="color: crimson;"> Haven't Registered ?</span>
+          </div>
+          <div style="text-align: center;margin-top: 20px;">
+           <span>Click here to register</span> <a style="color:crimson;" href="register.html" id="register">Register</a>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
